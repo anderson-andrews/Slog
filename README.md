@@ -33,7 +33,7 @@ blogs = Slog.new({:markdown => "Maruku",
                   :name => "my_name")
 ```
 
-###### Get the Glogs
+###### Get the Blogs
 
 1. Get the first blog file.
 
