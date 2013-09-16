@@ -1,8 +1,7 @@
 Slog
 ====
 
-A very simple blog engine. It designed to be used easily with almost any setup. 
-It uses a simple file based system.
+A very simple blog engine. It's designed to be used easily with almost any setup and uses a simple file based system.
 
 Usage
 -----
@@ -34,7 +33,7 @@ blogs = Slog.new({:markdown => "Maruku",
                   :name => "my_name")
 ```
 
-###### Get the blogs
+###### Get the Glogs
 
 1. Get the first blog file.
 
@@ -60,17 +59,17 @@ blogs.get(:first, 20)
 blogs.get(:last, 20)
 ```
 
-###### Process the blogs
+###### Process the Blogs
 
 Calling **process** processes all of your .txt files and populates the **processed_data** attribute with
-either and array of hashes or a single hash depending on whether **get** was passes a second parameter greater than
+either and array of hashes or just one hash depending on whether **get** was passed a second parameter greater than
 1.
 
 ```ruby
 blogs.process
 ```
 
-###### Text files
+###### Text Files
 
 Text files should be formatted like this `year-month-day__blog_name.txt`.
 
