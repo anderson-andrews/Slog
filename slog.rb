@@ -59,7 +59,7 @@ class Slog
   end
 
   def process_filename(file)
-    split_name = File.basename(file, "txt").split("__")
+    split_name = File.basename(file, ".txt").split("__")
     split_date = split_name[0].split("-")
     date = Date.strptime("{ #{split_date.join(',')} }", "{ %Y, %m, %d }")
     {:date => date, :name => split_name[1]}
