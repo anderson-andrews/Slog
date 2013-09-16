@@ -27,7 +27,7 @@ class Slog
       @files = glob.last(limit).sort
       @files.reverse! if posts.length > 1
     else
-      raise "Please enter pass :first or :last with the number of posts."
+      raise "Please pass :first or :last with the number of posts."
     end
   end
 
