@@ -35,25 +35,25 @@ blogs = Slog.new({:markdown => "Maruku",
 
 ###### Get the Blogs
 
-1. Get the first blog file.
+* Get the first blog file.
 
 ```ruby
 blogs.get(:first)
 ```
 
-2. Get the last blog file.
+* Get the last blog file.
 
 ```ruby
 blogs.get(:last)
 ```
 
-3. Get the first 20 blog files
+* Get the first 20 blog files
 
 ```ruby
 blogs.get(:first, 20)
 ```
 
-4. Get the last 20 blog files
+* Get the last 20 blog files
 
 ```ruby
 blogs.get(:last, 20)
