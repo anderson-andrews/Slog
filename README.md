@@ -90,12 +90,24 @@ you must set `data[:title]` and `data[:tags]`. Any information passed to the **d
 'blogs.processed_data' should return either an array of hashes or a hash.
 
 ```ruby
-[{:title=>"", :tags=>"", :html=>"", :date=>#<Date: 2013-09-14 (4913099/2,0,2299161)>, :name=>"test2"}, {:title=>"Test Blog", :tags=>["test", "blog"], :html=>"<h2 id='test_blog'>
-Test Blog</h2>", :date=>#<Date: 2013-09-15 (4913101/2,0,2299161)>, :name=>"test_blog"}]
+[{:title=>"", 
+  :tags=>"", 
+  :html=>"", 
+  :date=>#<Date: 2013-09-14 (4913099/2,0,2299161)>, 
+  :name=>"test2"}, 
+ {:title=>"Test Blog", 
+  :tags=>["test", "blog"], 
+  :html=>"<h2 id='test_blog'>Test Blog</h2>", 
+  :date=>#<Date: 2013-09-15 (4913101/2,0,2299161)>, 
+  :name=>"test_blog"}]
 ```
 
 or
 
 ```ruby
-{:title=>"Test Blog", :tags=>["test", "blog"], :html=>"<h2 id='test_blog'>Test Blog</h2>", :date=>#<Date: 2013-09-15 (4913101/2,0,2299161)>, :name=>"test_blog."}
+{:title=>"Test Blog", 
+ :tags=>["test", "blog"], 
+ :html=>"<h2 id='test_blog'>Test Blog</h2>", 
+ :date=>#<Date: 2013-09-15 (4913101/2,0,2299161)>, 
+ :name=>"test_blog."}
 ```
