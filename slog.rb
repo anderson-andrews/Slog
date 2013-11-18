@@ -64,8 +64,9 @@ class Slog
     date = Date.strptime("{ #{split_date.join(',')} }", "{ %Y, %m, %d }")
     {:date => date, :name => split_name[1]}
   end
-
+  
   def to_constant(str)
     Object.const_get(str)
   end
+  #test
 end
